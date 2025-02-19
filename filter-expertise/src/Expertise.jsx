@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import './Expertise.css';
+import "./Expertise.scss";
 
 class ExpertiseContainer extends React.Component {
   constructor(props) {
@@ -20,6 +20,7 @@ class ExpertiseContainer extends React.Component {
     rows = this.props.expertise.map((project) => {
       return (
         <ExpertiseDescription
+          key={project.id}
           name={project.title}
           image={project.image}
           description={project.description}
