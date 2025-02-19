@@ -3,12 +3,7 @@ import ReactDOM from "react-dom";
 import ExpertiseContainer from "./Expertise";
 import "./index.css";
 
-// ReactDOM.render(
-//   <App />,
-//   document.getElementById('portfolio')
-// );
-
-var EXPERTISE = [
+const EXPERTISE = [
   {
     category: ["AngularJS", "JavaScript"],
     image:

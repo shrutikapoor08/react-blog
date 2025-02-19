@@ -59,7 +59,12 @@ class Expertise extends React.Component {
   render() {
     return (
       <div className="pill">
-        <img src={this.props.image} alt={this.props.name} />
+        <img
+          height="70px"
+          width="70px"
+          src={this.props.image}
+          alt={this.props.name}
+        />
       </div>
     );
   }
@@ -68,20 +73,18 @@ class Expertise extends React.Component {
 class ExpertiseDescription extends React.Component {
   render() {
     var categories = this.props.category;
-    console.log("category", categories);
 
     var pill = this.props.pill;
-    console.log("pill", pill);
 
     if (!categories.includes(pill)) return null;
     else
       return (
         <div className="expertiseItem row">
           <div className="col-left col-md-4">
-            <img src={this.props.image} />
+            <img height="200px" width="auto" src={this.props.image} />
           </div>
           <div className="col-right col-md-8">
-            <p className="h2">{this.props.skills}</p>
+            <p>{this.props.skills}</p>
             <p> {this.props.description} </p>
           </div>
         </div>
